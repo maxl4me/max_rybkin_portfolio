@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rybkin Maxim | QA Specialist</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+  <!-- Fonts: cyber-ish + clean -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <!-- Logo -->
+      <a href="#home" class="logo">
+        <span class="logo-main">MaxQA</span>
+        <span class="logo-sub">Rybkin&nbsp;Maxim</span>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+
+        <!-- Left: text -->
+        <div class="hero-text">
+          <p class="hero-eyebrow">QA · Manual · Automation · API</p>
+
+          <h1 class="hero-title">
+            I break things before your users do.
+          </h1>
+
+          <p class="hero-subtitle">
+            QA Specialist focused on complex systems, video streaming, APIs, and cloud-native
+            environments. Currently at <strong>TAG Video Systems</strong>.
+          </p>
+
+          <p class="hero-body">
+            3+ years of hands-on experience in manual testing, API testing, Linux,
+            backend validation, and cloud platforms (AWS, GCP, Kubernetes).
+            Comfortable with SQL, Postman, Redis, Kafka, Elasticsearch, and debugging
+            real-time systems.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#experience" class="btn btn-primary">View Experience</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <a href="files/qa_rybkin_maxim_resume.docx"
+               class="btn btn-ghost"
+               target="_blank"
+               rel="noopener noreferrer">
+              Download Resume (DOCX)
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span>Based in Israel</span>
+            <span>Open to QA / Manual / Automation roles</span>
+          </div>
+        </div>
+
+        <!-- Right: photo + info card -->
+        <div class="hero-aside">
+          <div class="hero-photo-frame">
+            <div class="hero-photo-glow"></div>
+            <img
+              src="images/max_site_image.jpg"
+              alt="Portrait of Rybkin Maxim"
+              class="hero-photo"
+            />
+          </div>
+
+          <div class="hero-card">
+            <p class="hero-card-label">Current role</p>
+            <p class="hero-card-title">QA Specialist, TAG Video Systems</p>
+            <p class="hero-card-body">
+              Testing real-time video monitoring & streaming systems, distributed backends,
+              and cloud deployments with a strong focus on reliability and observability.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+
+        <header class="section-header">
+          <h2 class="section-title">Summary</h2>
+          <p class="section-subtitle">
+            A quick snapshot of who I am and how I work as a QA engineer.
+          </p>
+        </header>
+
+        <div class="card-grid about-grid">
+
+          <article class="card">
+            <h3 class="card-title">Profile</h3>
+            <p class="card-body">
+              Certified QA Engineer with strong experience in manual testing, API validation,
+              backend workflows, and cloud platforms. Skilled in Linux, SQL, networking basics,
+              and real-time systems. I enjoy designing test scenarios, exploring edge cases,
+              and keeping complex products stable.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">How I Add Value</h3>
+            <p class="card-body">
+              I combine structured QA methodology with practical debugging skills and clear
+              communication with R&D. I’m comfortable working across logs, APIs, UIs, and cloud
+              consoles to understand issues end-to-end.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Languages</h3>
+            <ul class="list">
+              <li>Hebrew — Fluent</li>
+              <li>English — Fluent</li>
+              <li>Russian — Fluent</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+
+        <header class="section-header">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-subtitle">
+            The tools, technologies, and areas I work with most often.
+          </p>
+        </header>
+
+        <div class="card-grid skills-grid">
+
+          <article class="card">
+            <h3 class="card-title">Testing</h3>
+            <ul class="pill-list">
+              <li>Manual Testing</li>
+              <li>Test Case Design</li>
+              <li>API Testing (Postman)</li>
+              <li>Regression Testing</li>
+              <li>Test Documentation</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Technologies</h3>
+            <ul class="pill-list">
+              <li>Python</li>
+              <li>Pytest</li>
+              <li>PyWinAuto</li>
+              <li>SQL (PostgreSQL &amp; SSMS)</li>
+              <li>Linux</li>
+              <li>Redis</li>
+              <li>Kafka</li>
+              <li>Elasticsearch</li>
+              <li>JIRA · HP-QC · DOORS · TFS</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Cloud & Infrastructure</h3>
+            <ul class="pill-list">
+              <li>AWS</li>
+              <li>GCP</li>
+              <li>Kubernetes</li>
+              <li>Docker</li>
+              <li>Networking Basics</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+
+        <header class="section-header">
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-subtitle">
+            Where I applied QA, automation, and system-level thinking.
+          </p>
+        </header>
+
+        <div class="card-grid experience-grid">
+
+          <article class="card">
+            <div class="card-meta">
+              <span class="card-meta-main">QA Specialist — TAG Video Systems</span>
+              <span class="card-meta-sub">2024 – Present · R&amp;D Department</span>
+            </div>
+            <p class="card-body">
+              • Manual testing of complex video monitoring &amp; streaming systems.<br />
+              • Work extensively with Linux and networking environments.<br />
+              • API testing using Postman.<br />
+              • Backend validation with PostgreSQL, Redis, Kafka, and Elasticsearch.<br />
+              • Cloud testing: AWS and GCP, with Kubernetes experience.<br />
+              • Write and execute detailed test cases based on requirements.<br />
+              • Track tasks and bugs using JIRA.<br />
+              • Create test documents and test plans.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span class="card-meta-main">QA Engineer — Elbit Systems</span>
+              <span class="card-meta-sub">2022 – 2024</span>
+            </div>
+            <p class="card-body">
+              • Performed manual testing and collaborated with development teams.<br />
+              • Created test cases and performed requirements analysis.<br />
+              • Conducted API testing using Postman.<br />
+              • Developed and executed automated tests with Python, PyWinAuto, and Pytest.<br />
+              • Used SQL (SSMS) for data validation and testing.<br />
+              • Tools used: JIRA, HP-QC, DOORS, TFS.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span class="card-meta-main">Project Manager — Smart Group Ltd.</span>
+              <span class="card-meta-sub">2017 – 2022</span>
+            </div>
+            <p class="card-body">
+              • Built, managed, and maintained an eCommerce website.<br />
+              • Oversaw ordering, logistics, and customs for international shipments.<br />
+              • Managed Facebook Ads campaigns and provided customer support.<br />
+              • Created and maintained documentation and test documents.
+            </p>
+          </article>
+
+        </div>
+
+        <div class="grid-two education-grid">
+          <div>
+            <h3 class="subsection-title">Education</h3>
+            <p class="subsection-body">
+              • 2021 – 2022: QA Software Tester Course, Technion – Israel Institute of Technology.<br />
+              • 1998 – 2004: Ort Ma’alot High School.
+            </p>
+          </div>
+          <div>
+            <h3 class="subsection-title">Military Service</h3>
+            <p class="subsection-body">
+              2004 – 2007: Artillery Corps, IDF.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+
+        <header class="section-header">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">
+            Let’s talk about QA roles, streaming systems, or automation plans.
+          </p>
+        </header>
+
+        <div class="card contact-card">
+          <div class="contact-grid">
+            <div>
+              <h3 class="contact-label">Email</h3>
+              <a class="contact-link" href="mailto:maxrivking@gmail.com">maxrivking@gmail.com</a>
+            </div>
+
+            <div>
+              <h3 class="contact-label">Phone</h3>
+              <p class="contact-text">(+972) 054-995-8832</p>
+            </div>
+
+            <div class="contact-social">
+              <a href="https://www.linkedin.com/in/mrivking/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="LinkedIn profile"
+                 class="linkedin-circle">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 24 24"
+                     width="20"
+                     height="20"
+                     aria-hidden="true">
+                  <circle cx="12" cy="12" r="11" fill="none" stroke="#38bdf8" stroke-width="1.4" />
+                  <path fill="#38bdf8"
+                        d="M9 17H6V10h3v7zM7.5 9C6.7 9 6 8.3 6 7.5S6.7 6 7.5 6 9 6.7 9 7.5 8.3 9 7.5 9zM18 17h-3v-3.6c0-.9-.3-1.5-1.2-1.5-.6 0-.9.4-1.1.7-.1.2-.1.6-.1.9V17h-3s.1-6.4 0-7h3v1c.4-.6 1-1.4 2.5-1.4 1.8 0 3 1.2 3 3.8V17z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" aria-label="Back to top" class="back-to-top">
+    <span>↑</span>
+  </button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Rybkin Maxim. All rights reserved.</p>
+      <p class="footer-note">Dark-tech portfolio · HTML &amp; CSS · Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script>
+    // Update year automatically
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Back-to-top button logic
+    const backToTopBtn = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 260) {
+        backToTopBtn.classList.add("back-to-top--visible");
+      } else {
+        backToTopBtn.classList.remove("back-to-top--visible");
+      }
+    });
+
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+</body>
+</html>
