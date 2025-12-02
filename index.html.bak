@@ -8,11 +8,11 @@
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 
-  <!-- Fonts: cyber-ish + clean -->
+  <!-- Font: clean & simple -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
     rel="stylesheet"
   />
 
@@ -28,7 +28,7 @@
       <!-- Logo -->
       <a href="#home" class="logo">
         <span class="logo-main">MaxQA</span>
-        <span class="logo-sub">Rybkin&nbsp;Maxim</span>
+        <span class="logo-sub">Rybkin Maxim</span>
       </a>
 
       <!-- Navigation -->
@@ -48,37 +48,67 @@
 
     <!-- HERO -->
     <section id="home" class="hero">
-      <div class="container hero-inner">
+      <div class="container hero-grid">
 
         <!-- Left: text -->
         <div class="hero-text">
-          <p class="hero-eyebrow">QA · Manual · Automation · API</p>
+          <p class="hero-eyebrow">QA Specialist · Manual & Automation</p>
 
           <h1 class="hero-title">
-            I break things before your users do.
+            I help teams ship stable, tested software.
           </h1>
 
           <p class="hero-subtitle">
-            QA Specialist focused on complex systems, video streaming, APIs, and cloud-native
-            environments. Currently at <strong>TAG Video Systems</strong>.
+            QA Engineer with 3+ years of experience in manual testing, API testing, Linux,
+            backend validation, and cloud environments. Currently working at
+            <strong>TAG Video Systems</strong>.
           </p>
 
           <p class="hero-body">
-            3+ years of hands-on experience in manual testing, API testing, Linux,
-            backend validation, and cloud platforms (AWS, GCP, Kubernetes).
-            Comfortable with SQL, Postman, Redis, Kafka, Elasticsearch, and debugging
-            real-time systems.
+            Skilled with SQL, Postman, Redis, Kafka, Elasticsearch, Kubernetes, AWS, and GCP.
+            Focused on clear test design, solid documentation, and practical debugging of
+            complex systems.
           </p>
 
           <div class="hero-actions">
-            <a href="#experience" class="btn btn-primary">View Experience</a>
+            <!-- Outline style for both -->
+            <a href="#experience" class="btn btn-outline">View Experience</a>
             <a href="#contact" class="btn btn-outline">Contact Me</a>
-            <a href="files/qa_rybkin_maxim_resume.docx"
-               class="btn btn-ghost"
-               target="_blank"
-               rel="noopener noreferrer">
-              Download Resume (DOCX)
-            </a>
+
+            <!-- CV download selector + icon-only button -->
+            <div class="download-group">
+              <select
+                id="cvFormat"
+                class="download-select"
+                aria-label="Resume format"
+              >
+                <option value="docx">CV.docx</option>
+                <option value="pdf">CV.pdf</option>
+              </select>
+              <button
+                type="button"
+                id="downloadCvBtn"
+                class="btn btn-ghost download-btn"
+                aria-label="Download CV"
+              >
+                <svg
+                  class="download-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 3a1 1 0 0 1 1 1v9.086l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1.002 1.002 0 0 1-1.414 0l-4-4A1 1 0 0 1 8.707 10.793L11 13.086V4a1 1 0 0 1 1-1z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M5 17a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span class="download-tooltip">Download CV</span>
+              </button>
+            </div>
           </div>
 
           <div class="hero-meta">
@@ -87,10 +117,9 @@
           </div>
         </div>
 
-        <!-- Right: photo + info card -->
+        <!-- Right: photo -->
         <div class="hero-aside">
-          <div class="hero-photo-frame">
-            <div class="hero-photo-glow"></div>
+          <div class="hero-photo-wrapper">
             <img
               src="images/max_site_image.jpg"
               alt="Portrait of Rybkin Maxim"
@@ -98,12 +127,11 @@
             />
           </div>
 
-          <div class="hero-card">
-            <p class="hero-card-label">Current role</p>
-            <p class="hero-card-title">QA Specialist, TAG Video Systems</p>
-            <p class="hero-card-body">
-              Testing real-time video monitoring & streaming systems, distributed backends,
-              and cloud deployments with a strong focus on reliability and observability.
+          <div class="hero-note">
+            <p class="hero-note-title">Current role</p>
+            <p class="hero-note-body">
+              QA Specialist at TAG Video Systems — testing real-time video monitoring,
+              streaming, and backend services in cloud and on-prem setups.
             </p>
           </div>
         </div>
@@ -118,28 +146,28 @@
         <header class="section-header">
           <h2 class="section-title">Summary</h2>
           <p class="section-subtitle">
-            A quick snapshot of who I am and how I work as a QA engineer.
+            A short overview of my background and approach to QA.
           </p>
         </header>
 
-        <div class="card-grid about-grid">
+        <div class="grid about-grid">
 
           <article class="card">
             <h3 class="card-title">Profile</h3>
             <p class="card-body">
               Certified QA Engineer with strong experience in manual testing, API validation,
-              backend workflows, and cloud platforms. Skilled in Linux, SQL, networking basics,
-              and real-time systems. I enjoy designing test scenarios, exploring edge cases,
-              and keeping complex products stable.
+              backend workflows, and cloud platforms. Comfortable working with Linux, SQL,
+              networking basics, and real-time systems. I enjoy understanding how systems
+              work end-to-end and finding issues early.
             </p>
           </article>
 
           <article class="card">
-            <h3 class="card-title">How I Add Value</h3>
+            <h3 class="card-title">How I Work</h3>
             <p class="card-body">
-              I combine structured QA methodology with practical debugging skills and clear
-              communication with R&D. I’m comfortable working across logs, APIs, UIs, and cloud
-              consoles to understand issues end-to-end.
+              I bring a structured testing mindset, clear communication with R&D, and a focus
+              on reproducible bugs and clean documentation. I like to combine test design,
+              logs, and metrics to understand problems, not just report them.
             </p>
           </article>
 
@@ -163,11 +191,11 @@
         <header class="section-header">
           <h2 class="section-title">Skills</h2>
           <p class="section-subtitle">
-            The tools, technologies, and areas I work with most often.
+            Technologies and areas I work with most often.
           </p>
         </header>
 
-        <div class="card-grid skills-grid">
+        <div class="grid skills-grid">
 
           <article class="card">
             <h3 class="card-title">Testing</h3>
@@ -217,11 +245,11 @@
         <header class="section-header">
           <h2 class="section-title">Work Experience</h2>
           <p class="section-subtitle">
-            Where I applied QA, automation, and system-level thinking.
+            Roles where I applied QA, automation, and system-level thinking.
           </p>
         </header>
 
-        <div class="card-grid experience-grid">
+        <div class="grid experience-grid">
 
           <article class="card">
             <div class="card-meta">
@@ -296,7 +324,7 @@
         <header class="section-header">
           <h2 class="section-title">Contact</h2>
           <p class="section-subtitle">
-            Let’s talk about QA roles, streaming systems, or automation plans.
+            Feel free to reach out about QA roles, projects, or collaboration.
           </p>
         </header>
 
@@ -339,14 +367,14 @@
 
   <!-- Back to Top Button -->
   <button id="backToTop" aria-label="Back to top" class="back-to-top">
-    <span>↑</span>
+    ↑
   </button>
 
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> Rybkin Maxim. All rights reserved.</p>
-      <p class="footer-note">Dark-tech portfolio · HTML &amp; CSS · Hosted on GitHub Pages</p>
+      <p class="footer-note">Portfolio · HTML &amp; CSS · Hosted on GitHub Pages</p>
     </div>
   </footer>
 
@@ -367,6 +395,23 @@
 
     backToTopBtn.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // CV download logic (DOCX / PDF)
+    const cvFormatSelect = document.getElementById("cvFormat");
+    const downloadCvBtn = document.getElementById("downloadCvBtn");
+
+    downloadCvBtn.addEventListener("click", () => {
+      const format = cvFormatSelect.value;
+      let filePath = "";
+
+      if (format === "pdf") {
+        filePath = "files/qa_rybkin_maxim_resume.pdf";
+      } else {
+        filePath = "files/qa_rybkin_maxim_resume.docx";
+      }
+
+      window.open(filePath, "_blank");
     });
   </script>
 
