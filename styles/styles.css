@@ -302,6 +302,10 @@ a {
   content: "• ";
 }
 
+.hero-meta span:first-child::before {
+  content: "";
+}
+
 /* Hero aside */
 
 .hero-aside {
@@ -430,7 +434,7 @@ a {
   margin-top: 4px;
 }
 
-/* Pill list */
+/* Pill list – always colored with button hover color */
 
 .pill-list {
   list-style: none;
@@ -445,9 +449,9 @@ a {
   font-size: 0.8rem;
   padding: 5px 10px;
   border-radius: 999px;
-  border: 1px solid #1f2937;
-  background: #020617;
-  color: #e5e7eb;
+  border: 1px solid #38bdf8;
+  background: #38bdf8;
+  color: #020617;
   white-space: nowrap;
 }
 
