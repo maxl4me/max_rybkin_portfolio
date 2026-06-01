@@ -8,11 +8,11 @@
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 
-  <!-- Font: clean & simple -->
+  <!-- Font: JetBrains Mono (e-ink / terminal feel) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
     rel="stylesheet"
   />
 
@@ -36,6 +36,7 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -52,7 +53,7 @@
 
         <!-- Left: text -->
         <div class="hero-text">
-          <p class="hero-eyebrow">QA Engineer · Manual & Automation</p>
+          <p class="hero-eyebrow">QA Engineer · Manual &amp; Automation</p>
 
           <h1 class="hero-title">
             I help teams ship stable, tested software.
@@ -71,8 +72,8 @@
           </p>
 
           <div class="hero-actions">
-            <!-- Outline style for both -->
-            <a href="#experience" class="btn btn-outline">View Experience</a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+            <a href="#experience" class="btn btn-outline">Experience</a>
             <a href="#contact" class="btn btn-outline">Contact Me</a>
 
             <!-- CV download selector + icon-only button -->
@@ -171,14 +172,14 @@
             <h3 class="card-title">How I Work</h3>
             <p class="card-body">
               I bring a structured testing mindset, focus on reproducible bugs, and clear
-              communication with R&D. I am comfortable testing complex, distributed systems,
+              communication with R&amp;D. I am comfortable testing complex, distributed systems,
               collaborating with developers, and maintaining solid test documentation across
               projects and releases.
             </p>
           </article>
 
           <article class="card">
-            <h3 class="card-title">Languages & Licenses</h3>
+            <h3 class="card-title">Languages &amp; Licenses</h3>
             <ul class="list">
               <li>Hebrew — Fluent</li>
               <li>English — Fluent</li>
@@ -205,10 +206,11 @@
         <div class="grid skills-grid">
 
           <article class="card">
-            <h3 class="card-title">Testing & Automation</h3>
+            <h3 class="card-title">Testing &amp; Automation</h3>
             <ul class="pill-list">
               <li>Manual Testing</li>
               <li>Test Case Design</li>
+              <li>Test Docs (STD/STP/STR)</li>
               <li>API Testing (Postman)</li>
               <li>Python</li>
               <li>Pytest</li>
@@ -218,7 +220,7 @@
           </article>
 
           <article class="card">
-            <h3 class="card-title">Backend & Tools</h3>
+            <h3 class="card-title">Backend &amp; Tools</h3>
             <ul class="pill-list">
               <li>SQL (SSMS)</li>
               <li>Linux</li>
@@ -226,6 +228,7 @@
               <li>Kafka</li>
               <li>Elasticsearch</li>
               <li>JIRA</li>
+              <li>XRAY</li>
               <li>HP-QC</li>
               <li>DOORS</li>
               <li>TFS</li>
@@ -233,7 +236,7 @@
           </article>
 
           <article class="card">
-            <h3 class="card-title">Cloud & Infrastructure</h3>
+            <h3 class="card-title">Cloud &amp; Infrastructure</h3>
             <ul class="pill-list">
               <li>AWS</li>
               <li>GCP</li>
@@ -247,8 +250,60 @@
       </div>
     </section>
 
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+
+        <header class="section-header">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">
+            Automation work, with code and documentation you can read.
+          </p>
+        </header>
+
+        <div class="projects-grid">
+
+          <article class="project">
+            <div class="project-head">
+              <h3 class="project-name">DJI Storefront — UI Automation Framework</h3>
+              <span class="project-stack">Python · Pytest · Playwright · Allure · GitHub Actions</span>
+            </div>
+
+            <p class="project-tagline">
+              A production-grade UI automation framework exercising real user journeys across
+              DJI’s geo-redirected marketing site and its US-default online store.
+            </p>
+
+            <div class="badge-row">
+              <span class="badge pass">CI green on main</span>
+              <span class="badge">22 tests · 6 classes</span>
+              <span class="badge">POM</span>
+              <span class="badge">2 data-driven suites</span>
+            </div>
+
+            <ul class="project-points">
+              <li>Page Object Model — selectors isolated in page objects and components, never in tests.</li>
+              <li>Region-aware strategy: contract-based assertions for the geo-redirected marketing site; a US-pinned fail-loud guard for the store.</li>
+              <li>Deterministic waits (no sleeps), Playwright traces on failure, full Allure reporting.</li>
+              <li>Documented end to end: test design, scenario catalogue, test plan, and test report.</li>
+            </ul>
+
+            <div class="project-links">
+              <a href="https://github.com/maxl4me/dji-automation" target="_blank" rel="noopener noreferrer">Repo ↗</a>
+              <a class="ghost" href="https://github.com/maxl4me/dji-automation/blob/main/docs/STD.md" target="_blank" rel="noopener noreferrer">STD ↗</a>
+              <a class="ghost" href="https://github.com/maxl4me/dji-automation/blob/main/docs/STD_Test_Scenarios.xlsx" target="_blank" rel="noopener noreferrer">Scenarios ↗</a>
+              <a class="ghost" href="https://github.com/maxl4me/dji-automation/blob/main/docs/STP.md" target="_blank" rel="noopener noreferrer">STP ↗</a>
+              <a class="ghost" href="https://github.com/maxl4me/dji-automation/blob/main/docs/STR.md" target="_blank" rel="noopener noreferrer">STR ↗</a>
+              <a class="ghost" href="https://github.com/maxl4me/dji-automation/blob/main/docs/CI.md" target="_blank" rel="noopener noreferrer">CI ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
     <!-- EXPERIENCE -->
-    <section id="experience" class="section">
+    <section id="experience" class="section section-alt">
       <div class="container">
 
         <header class="section-header">
@@ -268,7 +323,8 @@
             <p class="card-body">
               • Perform manual testing of complex autonomous drone systems.<br />
               • Validate end-to-end behavior across mission control, flight logic, and system stability.<br />
-              • Work closely with R&D to ensure safe, predictable behavior in real-world scenarios.
+              • Author test documentation — Software Test Design (STD), Test Plan (STP), and Test Report (STR).<br />
+              • Work closely with R&amp;D to ensure safe, predictable behavior in real-world scenarios.
             </p>
           </article>
 
@@ -374,8 +430,8 @@
                        width="20"
                        height="20"
                        aria-hidden="true">
-                    <circle cx="12" cy="12" r="11" fill="none" stroke="#38bdf8" stroke-width="1.4" />
-                    <path fill="#38bdf8"
+                    <circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.4" />
+                    <path fill="currentColor"
                           d="M9 17H6V10h3v7zM7.5 9C6.7 9 6 8.3 6 7.5S6.7 6 7.5 6 9 6.7 9 7.5 8.3 9 7.5 9zM18 17h-3v-3.6c0-.9-.3-1.5-1.2-1.5-.6 0-.9.4-1.1.7-.1.2-.1.6-.1.9V17h-3s.1-6.4 0-7h3v1c.4-.6 1-1.4 2.5-1.4 1.8 0 3 1.2 3 3.8V17z" />
                   </svg>
                 </a>
